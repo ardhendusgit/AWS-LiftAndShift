@@ -31,7 +31,7 @@ We set up Autoscaling groups to automatically adjust the number of EC2 instances
   - Auto Scaling dynamically manages the capacity of Tomcat instances.
   - Backend servers (MySQL, Memcache, RabbitMQ) are identified using Route 53 private DNS zones.
 
-* ## Steps
+• ## Steps
   - Utilize EC2 instances for hosting Tomcat, Memcache, RabbitMQ, and MySQL services and configure an Elastic Load Balancer for distributing traffic.
   - Implement Auto Scaling using target groups to dynamically adjust the capacity of EC2 instances based on load.
   - Leverage Amazon S3 for storing software artifacts.
@@ -40,3 +40,4 @@ We set up Autoscaling groups to automatically adjust the number of EC2 instances
     - Restrict HTTPS traffic to the Load Balancer.
     - Allow communication on Port 8080 from the Load Balancer to Tomcat instances.
     - Secure backend instances running MySQL, Memcache, and RabbitMQ.
+  - Finally, route user requests through the Load Balancer to Tomcat instances for optimal load distribution.
