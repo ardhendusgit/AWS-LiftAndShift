@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
-* [Cloud Technologies](#cloud-technologies)
+* [Cloud Technologies](#cloudtechnologies)
 * [Setup](#setup)
 
 ## General info
@@ -30,3 +30,13 @@ We set up Autoscaling groups to automatically adjust the number of EC2 instances
   - The Load Balancer, secured with HTTPS, forwards requests to Tomcat instances.
   - Auto Scaling dynamically manages the capacity of Tomcat instances.
   - Backend servers (MySQL, Memcache, RabbitMQ) are identified using Route 53 private DNS zones.
+
+• ## Steps
+  - Utilize EC2 instances for hosting Tomcat, Memcache, RabbitMQ, and MySQL services and configure an Elastic Load Balancer for distributing traffic.
+  - Implement Auto Scaling using target groups to dynamically adjust the capacity of EC2 instances based on load.
+  - Leverage Amazon S3 for storing software artifacts.
+  - Use Amazon Certificate Manager (ACM) for managing SSL certificates and employ Route 53 for DNS management and configure private DNS zones.
+  - Apply security groups to:
+    - Restrict HTTPS traffic to the Load Balancer.
+    - Allow communication on Port 8080 from the Load Balancer to Tomcat instances.
+    - Secure backend instances running MySQL, Memcache, and RabbitMQ.
