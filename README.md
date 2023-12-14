@@ -34,7 +34,7 @@ We begin by replicating on-premises/localized servers as Amazon EC2 instances. T
 To enhance the availability and distribution of incoming traffic, Amazon ELB is used to distribute requests across multiple EC2 instances. This ensures high availability and optimal performance.
 
 * ## Amazon S3 for Artifact Storage
-Amazon S3 for Artifact Storage: Amazon S3 serves as the ideal repository for storing application artifacts and other critical data. It's a scalable and durable solution designed for efficient object storage.
+Amazon S3 serves as the ideal repository for storing application artifacts and other critical data. It's a scalable and durable solution designed for efficient object storage.
 
 * ## Amazon Route 53 for DNS Management
 Route 53 is used to establish a private DNS zone, enabling efficient and secure domain name resolution for your application within the AWS environment.
