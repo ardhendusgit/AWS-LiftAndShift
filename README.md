@@ -1,10 +1,29 @@
 ## Table of contents
 * [General info](#general-info)
+* [Application Tech Stack](#application-tech-stack)
 * [Cloud Technologies](#cloudtechnologies)
 * [Setup](#setup)
 
 ## General info
 This project facilitates the migration of a locally hosted Multi-Tier Web Application to the AWS Cloud, using a proven strategy known as "Lift and Shift" while taking full advantage of the robust AWS service ecosystem.
+
+## Application Tech Stack
+  - JDK 1.8 or later
+  - Maven 3 or later
+  - MySQL 5.6 or later
+  - Spring MVC
+  - Spring Security
+  - Spring Data JPA
+  - Maven
+  - JSP
+  - MySQL
+    -MSQL DB Installation Steps for Linux ubuntu 14.04:
+      - $ sudo apt-get update
+      - $ sudo apt-get install mysql-server
+        Then look for the file :
+      - /src/main/resources/accountsdb
+      - accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server -> mysql -u <user_name> -p accounts < accountsdb.sql
+
 
 ## Cloud Technologies
 Here's how this project uses AWS services for an efficient migration:
