@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Application Tech Stack](#application-tech-stack)
-* [Cloud Technologies](#cloudtechnologies)
+* [Cloud Technologies](#cloud-technologies)
 * [Setup](#setup)
 
 ## General info
