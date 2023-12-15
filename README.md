@@ -7,6 +7,8 @@
 ## General info
 This project facilitates the migration of a locally hosted Multi-Tier Web Application to the AWS Cloud, using a proven strategy known as "Lift and Shift" while taking full advantage of the robust AWS service ecosystem.
 
+![Architecture Diagram Lucid](Vprofile-Lift&Shift.jpeg)
+
 ## Application Tech Stack
   - JDK 1.8 or later
   - Maven 3 or later
